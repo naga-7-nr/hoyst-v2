@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Voyage Control – Platform Selection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:
+      linear-gradient(135deg, rgba(11,117,102,0.92), rgba(29,150,130,0.88)),
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 40px);
+    background-color: #0b7566;
+    color: #0f2b26;
+  }
+  .top { display: flex; align-items: center; justify-content: space-between; padding: 24px 40px; }
+  .logo { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-size: 15px; letter-spacing: 0.3px; }
+  .user { display: flex; align-items: center; gap: 14px; color: #fff; font-size: 13px; }
+  .logout { background: #fff; color: #0b7566; border: none; padding: 9px 18px; border-radius: 20px; font-weight: 700; font-size: 12.5px; cursor: pointer; }
+  .cards { display: flex; gap: 22px; flex-wrap: wrap; padding: 60px 40px; }
+  .card { background: #eef4f2; border-radius: 8px; padding: 22px; width: 230px; min-height: 190px; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.12); position: relative; }
+  .card.new { border-top: 4px solid #0b907b; }
+  .card h3 { margin: 0 0 10px; font-size: 19px; font-weight: 800; color: #0f2b26; }
+  .card p { color: #3c4b47; font-size: 13px; line-height: 1.4; flex: 1; }
+  .card .open { color: #0f2b26; font-weight: 700; font-size: 13.5px; display: flex; align-items: center; gap: 6px; text-decoration: none; }
+  .badge-new { position: absolute; top: -10px; right: 14px; background: #0b907b; color: #fff; font-size: 10.5px; font-weight: 800; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.4px; }
+  .crane { position: absolute; opacity: 0.15; right: 18px; top: 18px; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 20 L9 8 L13 15 L17 4 L21 20" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="3" cy="20" r="1.6" fill="#fff"/><circle cx="9" cy="8" r="1.6" fill="#fff"/><circle cx="13" cy="15" r="1.6" fill="#fff"/><circle cx="17" cy="4" r="1.6" fill="#fff"/><circle cx="21" cy="20" r="1.6" fill="#fff"/></svg>
+      VOYAGE CONTROL
+    </div>
+    <div class="user">
+      satish.nv@neuralrays.ai
+      <button class="logout">Logout ↗</button>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Voyage Control Admin</h3>
+      <p>Admin portal for all voyage control platforms</p>
+      <a class="open" href="#">Open ↗</a>
+    </div>
+    <div class="card">
+      <h3>Analytics</h3>
+      <p>Analytics platform</p>
+      <a class="open" href="#">Open ↗</a>
+    </div>
+    <div class="card">
+      <h3>Construction deliveries</h3>
+      <p>Deliveries platform V3</p>
+      <a class="open" href="#">Open ↗</a>
+    </div>
+    <div class="card">
+      <h3>Legacy Construction V2</h3>
+      <p>Legacy V2 platform Construction</p>
+      <a class="open" href="#">Open ↗</a>
+    </div>
+    <div class="card">
+      <h3>Supply Chain</h3>
+      <p>Supply chain module</p>
+      <a class="open" href="#">Open ↗</a>
+    </div>
+    <div class="card new">
+      <span class="badge-new">NEW</span>
+      <h3>Hoyst</h3>
+      <p>Lift &amp; hoist management for under-construction buildings</p>
+      <a class="open" href="index.html">Open ↗</a>
+    </div>
+  </div>
+</body>
+</html>
