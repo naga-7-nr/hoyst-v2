@@ -129,7 +129,7 @@
       ${item("Home", "#/home", "🏠")}
       <div class="nav-section-title">Project Management</div>
       ${item("Manage Hoists", "#/manage-hoists", "🛠️", true)}
-      ${item("Pair Hoysts", "#/pair-hoysts", "🔗", true)}
+      ${item("Pair Hoists", "#/pair-hoysts", "🔗", true)}
       ${isAlertAdmin() || !isAdmin() ? item("Manage Alerts", "#/manage-alerts", "📢", false, "Alert Admin") : `<div class="nav-item" style="opacity:0.4;cursor:not-allowed;">📢 Manage Alerts<span class="lock">🔒 Alert Admin</span></div>`}
       <div class="nav-section-title">Bookings</div>
       ${item("Book a Hoist", "#/book", "➕")}
@@ -453,7 +453,7 @@
     });
 
     return `
-      <div class="page-header"><div><h1>Pair Hoysts</h1><div class="subtitle">Admin only. Pair 2 or more hoysts within the same building so requests for one are shared by all.</div></div></div>
+      <div class="page-header"><div><h1>Pair Hoists</h1><div class="subtitle">Admin only. Pair 2 or more hoysts within the same building so requests for one are shared by all.</div></div></div>
       <div class="panel-title" style="margin:0 0 10px;">Existing Pairings</div>
       ${existing || `<div class="panel"><div class="empty-state">No pairings yet.</div></div>`}
       <div class="panel-title" style="margin:20px 0 10px;">Create a New Pairing</div>
